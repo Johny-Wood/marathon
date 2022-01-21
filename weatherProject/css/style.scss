@@ -83,7 +83,7 @@
       }
     }
 
-    &-image {
+    &-favourite {
       align-self: flex-end;
       text-align: center;
       width: 44px;
@@ -151,12 +151,59 @@
     &-subbox {
       margin-bottom: 42px;
       padding-left: 2px;
+
+      &--margin {
+        margin-bottom: 7px;
+      }
     }
 
     &-element:not(:last-child) {
       margin-bottom: 20px;
     }
+
+    &-forecast {
+      flex-direction: column;
+      padding: 33px 18px 0px;
+    }
+
+    &-weather {
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      }
+    }
+
+    &-daily {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px 10px;
+      border: 1px solid #000000;
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
+    &-data {
+      display: block;
+      margin-bottom: 36px;
+    }
+
+    &-time {
+      display: block;
+      margin-bottom: 34px;
+      text-align: right;
+    }
+
+    &-image {
+      height: 31px;
+      width: 31px;
+      margin-left: 13px;
+      transform: scale(1.5);
+    }
   }
+
 
   &__locations {
     width: 100%;
@@ -208,17 +255,16 @@
   }
 }
 
-.tab {
-  display: none;
+  .tab {
+    display: none;
 
-  &.is-active {
-    display: flex;
-    min-height: 354px
+    &.is-active {
+      display: flex;
+      height: 354px
+    }
   }
-}
 
-.weather-app__info-image--active .weather-app__info-icon {
-  fill: red;
-  stroke: red;
-}
-
+  .weather-app__info-favourite--active .weather-app__info-icon {
+    fill: red;
+    stroke: red;
+  }

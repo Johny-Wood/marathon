@@ -28,7 +28,8 @@
 
         <div class="weather-app__UI">
           <div class="weather-app__info">
-            <div class="weather-app__info-status tab tab-1 is-active" style="background-image: url(../images/cloud-weather.jpg)">
+            <div class="weather-app__info-status tab tab-1 is-active"
+              style="background-image: url(../images/cloud-weather.jpg)">
               <div class="weather-app__info-box">
                 <div class="weather-app__info-state">
                   <span class="weather-app__info-values weather-app__info-values--unicod temperatureValue"></span>
@@ -37,7 +38,7 @@
                 <span class="weather-app__info-city cityValue"></span>
               </div>
 
-              <div class="weather-app__info-image">
+              <div class="weather-app__info-favourite">
                 <svg class="weather-app__info-icon">
                   <use xlink:href="images/sprite.svg#favourite"></use>
                 </svg>
@@ -56,19 +57,153 @@
                 </li>
                 <li class="weather-app__info-element">
                   <span class="weather-app__info-subtitle">Feels like: </span>
-                  <span class="weather-app__info-values weather-app__info-values--unicod">10</span>
+                  <span class="weather-app__info-values weather-app__info-values--unicod feelsLikeValue">10</span>
                 </li>
                 <li class="weather-app__info-element">
                   <span class="weather-app__info-subtitle">Weather: </span>
-                  <span class="weather-app__info-values">Clouds</span>
+                  <span class="weather-app__info-values typeOfWeatherValue">Clouds</span>
                 </li>
                 <li class="weather-app__info-element">
                   <span class="weather-app__info-subtitle">Sunrise: </span>
-                  <span class="weather-app__info-values">03:21</span>
+                  <span class="weather-app__info-values sunriseInfo">03:21</span>
                 </li>
                 <li class="weather-app__info-element">
                   <span class="weather-app__info-subtitle">Sunset: </span>
-                  <span class="weather-app__info-values">18:54</span>
+                  <span class="weather-app__info-values sunsetInfo">18:54</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="weather-app__info-forecast tab tab-3">
+              <div class="weather-app__info-subbox weather-app__info-subbox--margin">
+                <span class="weather-app__info-city cityValue">Aktobe</span>
+              </div>
+
+              <ul class="weather-app__info-weather">
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod feelsLikeValue"></span>
+                  </div>
+
+                  <div class="weather-app__info-wrap">
+                    <time class = "weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="images/icons/weather.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+
+                <li class="weather-app__info-daily">
+                  <div class="weather-app__info-wrap">
+                    <span class="weather-app__info-data dataValue"></span>
+                    <span class="weather-app__info-subtitle">Temperature: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod  tempValue"></span>
+                    <span class="weather-app__info-subtitle">Feels like: </span>
+                    <span class="weather-app__info-values weather-app__info-values--unicod forecastFeelsLikeValue"></span>
+                  </div>
+                
+                  <div class="weather-app__info-wrap">
+                    <time class="weather-app__info-time timeValue" datetime=""></time>
+                    <span class="weather-app__info-values forecastTypeOfWeatherValue"></span>
+                    <div class="weather-app__info-image">
+                      <img class="weatherIcon" src="" alt="">
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -90,10 +225,6 @@
           <div class="weather-app__locations">
             <span class="weather-app__locations-subtitle">Added Locations:</span>
             <ul class="weather-app__locations-list">
-              <!-- <li class="weather-app__locations-item">Aktobe
-                <span class="weather-app__locations-delete"></span>
-              </li> -->
-              
             </ul>
           </div>
         </div>
